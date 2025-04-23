@@ -22,5 +22,5 @@ import cats.effect.IOApp
 
 object Main extends IOApp {
   def run(args: List[String]): IO[ExitCode] =
-    IO.println("no").as(ExitCode.Error)
+    IO.println("no!").as(ExitCode.Error)
 }

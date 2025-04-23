@@ -1,0 +1,41 @@
+* No
+
+/No/ is a project that exists solely to test publication to Central
+Publisher Portal before the [[https://central.sonatype.org/news/20250326_ossrh_sunset/][OSSRH sunset]].
+
+** What does it do?
+
+It prints ~"no!"~ to standard output and exits with an error.
+
+** Notes on publishing to Central Portal.
+
+1. [[https://central.sonatype.org/faq/what-is-different-between-central-portal-and-legacy-ossrh/#process-to-migrate][Migrate your namespace]] to Central Portal.
+2. Add this line to ~build.sbt~:
+
+   #+begin_src scala
+   ThisBuild / sonatypeCredentialHost := xerial.sbt.Sonatype.sonatypeCentralHost
+   #+end_src
+
+   This replaces any deprecated reference to =tlSonatypeUseLegacyHost=.
+
+** FAQ
+
+*** Will this be maintained long term?
+
+No.
+
+*** Are new features planned?
+
+No.
+
+*** Are you proud that this is on GitHub?
+
+No.
+
+*** May I send AI slop requests?
+
+No.
+
+*** ¿Puedo traducirlo al español?
+
+Solo si se añade un signo de exclamación invertido.  De lo contrario, *¡no!*
