@@ -18,6 +18,11 @@ It prints ~"no!"~ to standard output and exits with an error.
 
    This replaces any deprecated reference to =tlSonatypeUseLegacyHost=.
 
+** Coding standards
+
+The ideal commit message asks a rhetorical question and ends with,
+~No.~  Is this always possible?  No.
+
 ** FAQ
 
 *** Will this be maintained long term?
