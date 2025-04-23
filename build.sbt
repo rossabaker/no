@@ -15,6 +15,7 @@ ThisBuild / sonatypeCredentialHost := xerial.sbt.Sonatype.sonatypeCentralHost
 val Scala3 = "3.3.5"
 ThisBuild / crossScalaVersions := Seq(Scala3)
 ThisBuild / scalaVersion := Scala3 // the default Scala
+ThisBuild / tlCiDependencyGraphJob := false
 
 lazy val root = project.aggregate(core)
 
