@@ -16,9 +16,9 @@ ThisBuild / tlSonatypeUseLegacyHost := false
 // publish website from this branch
 ThisBuild / tlSitePublishBranch := Some("main")
 
-val Scala213 = "2.13.16"
-ThisBuild / crossScalaVersions := Seq(Scala213, "3.3.5")
-ThisBuild / scalaVersion := Scala213 // the default Scala
+val Scala3 = "3.3.5"
+ThisBuild / crossScalaVersions := Seq(Scala3)
+ThisBuild / scalaVersion := Scala3 // the default Scala
 
 lazy val root = project.aggregate(core)
 
