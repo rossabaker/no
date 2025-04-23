@@ -16,11 +16,11 @@
 
 package com.rossabaker.no
 
+import cats.effect.ExitCode
 import cats.effect.IO
 import cats.effect.IOApp
 
-object Main extends IOApp.Simple {
-
-  def run: IO[Unit] =
-    IO.println("Hello sbt-typelevel!")
+object Main extends IOApp {
+  def run(args: List[String]): IO[ExitCode] =
+    IO.println("no").as(ExitCode.Error)
 }
