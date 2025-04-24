@@ -51,6 +51,10 @@ No.
 
 No.
 
+*** Is there a changelog?
+
+No.
+
 *** ¿Puedo traducirlo al español?
 
 Solo si se añade un signo de exclamación invertido.  De lo contrario, *¡no!*
