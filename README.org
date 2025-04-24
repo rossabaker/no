@@ -17,6 +17,12 @@ It prints ~"no!"~ to standard output and exits with an error.
    #+end_src
 
    This replaces any deprecated reference to =tlSonatypeUseLegacyHost=.
+3. Run the workflow on at least Java 11, lest your publish fail with a
+   ~java/net/http/HttpTimeoutException~.  See [[https://github.com/xerial/sbt-sonatype/issues/548][xerial/sbt-sonatype#548]].
+
+   #+begin_src scala
+   ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec.temurin("11"))
+   #+end_src
 
 ** Coding standards
 
