@@ -1,4 +1,4 @@
-* No
+* No.
 
 /No/ is a project that exists solely to test publication to Central
 Publisher Portal before the [[https://central.sonatype.org/news/20250326_ossrh_sunset/][OSSRH sunset]].
@@ -7,7 +7,7 @@ Publisher Portal before the [[https://central.sonatype.org/news/20250326_ossrh_s
 
 It prints ~"no!"~ to standard output and exits with an error.
 
-** Notes on publishing to Central Portal.
+** Notes on publishing to Central Portal
 
 1. [[https://central.sonatype.org/faq/what-is-different-between-central-portal-and-legacy-ossrh/#process-to-migrate][Migrate your namespace]] to Central Portal.
 2. Add this line to ~build.sbt~:
