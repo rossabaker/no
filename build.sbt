@@ -17,6 +17,7 @@ ThisBuild / crossScalaVersions := Seq(Scala3)
 ThisBuild / scalaVersion := Scala3 // the default Scala
 ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec.temurin("11"))
 ThisBuild / tlCiDependencyGraphJob := false
+ThisBuild / tlCiReleaseBranches := Seq("main")
 
 lazy val root = project.aggregate(core)
 
