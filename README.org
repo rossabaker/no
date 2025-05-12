@@ -23,6 +23,7 @@ It prints ~"no!"~ to standard output and exits with an error.
    #+begin_src scala
    ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec.temurin("11"))
    #+end_src
+4. Snapshots are broken: [[https://github.com/xerial/sbt-sonatype/issues/564][xerial/sbt-sonatype#564]]
 
 ** Coding standards
 
