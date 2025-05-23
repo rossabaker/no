@@ -12,7 +12,7 @@ ThisBuild / developers := List(
 
 ThisBuild / sonatypeCredentialHost := xerial.sbt.Sonatype.sonatypeCentralHost
 
-val Scala3 = "3.3.5"
+val Scala3 = "3.3.6"
 ThisBuild / crossScalaVersions := Seq(Scala3)
 ThisBuild / scalaVersion := Scala3 // the default Scala
 ThisBuild / githubWorkflowJavaVersions := Seq(
