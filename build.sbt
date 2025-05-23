@@ -20,7 +20,6 @@ ThisBuild / githubWorkflowJavaVersions := Seq(
   JavaSpec.temurin("8")
 )
 ThisBuild / tlCiDependencyGraphJob := false
-ThisBuild / tlCiReleaseBranches := Seq("main")
 
 lazy val root = project.aggregate(core)
 
