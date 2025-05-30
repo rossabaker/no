@@ -10,15 +10,9 @@ ThisBuild / developers := List(
   tlGitHubDev("rossabaker", "Ross A. Baker")
 )
 
-ThisBuild / sonatypeCredentialHost := xerial.sbt.Sonatype.sonatypeCentralHost
-
 val Scala3 = "3.3.6"
 ThisBuild / crossScalaVersions := Seq(Scala3)
 ThisBuild / scalaVersion := Scala3 // the default Scala
-ThisBuild / githubWorkflowJavaVersions := Seq(
-  JavaSpec.temurin("11"),
-  JavaSpec.temurin("8")
-)
 ThisBuild / tlCiDependencyGraphJob := false
 
 lazy val root = project.aggregate(core)
