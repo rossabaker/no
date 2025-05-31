@@ -15,7 +15,9 @@ ThisBuild / crossScalaVersions := Seq(Scala3)
 ThisBuild / scalaVersion := Scala3 // the default Scala
 ThisBuild / tlCiDependencyGraphJob := false
 
-lazy val root = project.aggregate(core)
+lazy val root = project
+  .aggregate(core)
+  .enablePlugins(NoPublishPlugin)
 
 lazy val core = project
   .in(file("core"))
